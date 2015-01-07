@@ -1,4 +1,4 @@
-v0.0.9 jQuery baigoValidator Plugin 表单验证插件
+v0.0.9 jQuery baigoValidator for Bootstrap Plugin 表单验证插件
 (c) 2012 baigo - http://www.baigo.net/jQueryPlugins/baigoValidator.php
 License: http://www.opensource.org/licenses/mit-license.php
 
@@ -100,6 +100,8 @@ License: http://www.opensource.org/licenses/mit-license.php
 				int：整数
 				digit：数字（可带小数点）
 			validator.type 为 checkbox radio 和 select 时可忽略
+
+		3.2.3 group：表单组 ID
 
 	3.3 length：规定长度或大小，0 为无限制
 		validator.type 为 str 时：
