@@ -10,6 +10,7 @@ License: http://www.opensource.org/licenses/mit-license.php
     1.5 status_y.png 验证成功时的图标
     1.6 loading.gif 正在验证图标
     1.7 readme.txt 使用说明
+    1.8 ajax.json ajax 验证示例
 
 2 用法
     2.1 引入文件
