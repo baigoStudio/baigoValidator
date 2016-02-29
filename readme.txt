@@ -58,7 +58,7 @@ License: http://www.opensource.org/licenses/mit-license.php
         }
         对象详细说明请查看 3
 
-    2.4 定义需要验证表单的 data-validate 属性，其值为一级对象名，如 data-validate 属性为空，则一级对象名该改表单的 id，当 validator.type 为 checkbox radio 和 select 时，该属性不能为空值，此处需与 3.1 中的定义一致，如：
+    2.4 定义需要验证表单的 data-validate 属性，其值为一级对象名，如 data-validate 属性为空，则一级对象名为该表单的 id，当 validator.type 为 checkbox 和 radio 时，该属性不能为空值，此处需与 3.1 中的定义一致，如：
         <input type="text" id="name" data-validate="name">
         <input type="checkbox" id="check" data-validate="check">
 
@@ -69,9 +69,9 @@ License: http://www.opensource.org/licenses/mit-license.php
         });
 
 3 配置详细说明 opts_validate：验证配置，为 json 对象（名称可以自定义）
-    3.1 配置的一级对象名需要与 2.4 中 data-validate 属性对应：
+    3.1 配置的一级对象需与 2.4 中 data-validate 属性对应：
     3.2 validate：验证类型
-        3.2.1 selector：表单选择器名，此对象的值必须为待验证的表单的选择器名称，建议使用 ID，如未定义此对象，则默认将待验证的表单 ID 作为选择器
+        3.2.1 selector：表单选择器名，此对象的值必须为待验证的表单的选择器名称，建议使用 id，如未定义此对象，则默认将待验证的表单 id 作为选择器
         3.2.2 type：类型
             str：字符串
             digit：数字
@@ -99,9 +99,9 @@ License: http://www.opensource.org/licenses/mit-license.php
                 digit：数字（可带小数点）
             validator.type 为 checkbox radio 和 select 时可忽略
 
-        3.2.4 group：表单组选择器名，建议使用 ID。此参数主要为配合 Bootstrap 的验证样式，如使用此参数，将为相对应的表单组附加样式类。页面中必须使用 Bootstrap，详细请参考 Bootstrap 中文网站关于表单验证样式的信息 http://v3.bootcss.com/css/#forms-control-validation。
+        3.2.4 group：表单组选择器名，建议使用 id。此参数主要为配合 Bootstrap 的验证样式，如使用此参数，将为相对应的表单组附加样式类。页面中必须使用 Bootstrap，详细请参考 Bootstrap 中文网站关于表单验证样式的信息 http://v3.bootcss.com/css/#forms-control-validation。
 
-        3.2.5 target：目标，建议使用 ID
+        3.2.5 target：目标选择器，建议使用 id
             当 validator.type 为 confirm 时，必须指定本对象，以便验证两个表单值是否一样
 
     3.3 len：规定长度或大小，0 为无限制
@@ -116,7 +116,7 @@ License: http://www.opensource.org/licenses/mit-license.php
             max：最大
 
     3.4 msg：提示信息
-        selector：显示信息的选择器名，建议使用 ID
+        selector：显示信息的选择器名，建议使用 id
         too_short：太短
         too_long：太长
         too_few：太少

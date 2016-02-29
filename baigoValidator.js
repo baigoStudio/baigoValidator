@@ -220,7 +220,7 @@ License: http://www.opensource.org/licenses/mit-license.php
 
             } else {
 
-                _ajaxData = _ajax.key + "=" + _str + "&a=" + Math.random();
+                var _ajaxData = _ajax.key + "=" + _str + "&a=" + Math.random();
                 if (_ajax.attach) {
                     _ajaxData = _ajaxData + "&" + _ajax.attach;
                 }
